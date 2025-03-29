@@ -486,8 +486,6 @@
 .avatar__20a53:hover>svg,
 .icon__2ea32:hover,
 .closeIcon__972a0:hover {
-    animation: icon1 0s ease-in;
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 @keyframes icon1 {
@@ -608,11 +606,11 @@ span.button__67645.redGlow__67645 {
     background-color: var(--highlight);
     color: var(--background) !important
 }
-
-.visual-refresh .channelTextArea_f75fb0 {
+	.visual-refresh .channelTextArea__74017, .visual-refresh .channelTextArea__74017:focus-within {
     /* textbar area */
     border: 1px solid var(--highlight);
     background: var(--darkPurple-background);
+	margin-bottom: 25px;
 }
 
 .themedBackground__74017 {
@@ -630,7 +628,7 @@ background: var(--darkPurple-background);
 }
 
 .container_c48ade {
-    --custom-chat-input-margin-bottom: 0px !important;
+    --custom-chat-input-margin-bottom: 15px !important;
 }
 
 .channelTextArea_f75fb0 {
@@ -801,22 +799,12 @@ background: var(--darkPurple-background);
 }
 .wordmark__421ed::after {
     /* app title */
-    content: var();
+    content: var(--custom-title-text);
     font-size: calc(var(--custom-title-font-size)*var(--show-custom-title));
     font-weight: var(--custom-title-font-weight);
     margin-top: var(--custom-title-margin-top);
     margin-left: var(--custom-title-margin-left);
     display: block
-}
-.wordmark__421ed::after {
-    content: var(Venom Nahui); /* Важно: убрать кавычки внутри var() */
-    font-size: calc(var(16) * var(--show-custom-title));
-    font-weight: var(--custom-title-font-weight);
-    margin-top: var(--custom-title-margin-top);
-    margin-left: var(--custom-title-margin-left);
-    display: block;
-    font-family: "Pirata One", system-ui; /* Шрифт (у вас уже есть) */
-    color: var(#ffffff); /* Цвет из вашей темы */
 }
 
 .newMessagesBar__0f481 {
@@ -884,7 +872,7 @@ background: var(--darkPurple-background);
     font-weight: 500;
     display: flex;
     align-items: center;
-    padding: 0 8px 1px;
+    padding: 0 8px 0;
     flex-shrink: 0;
     position: relative;
     border-radius: 8px;
@@ -1112,12 +1100,12 @@ button:has([d=" M7,-6 C7,-7.6570000648498535 5.6570000648498535,-9 4,-9 C4,-9 3.
 /* forum */
 .chatLayerWrapper__01ae2 {
     border-radius: 8px;
-    margin: 0px;
+    margin: 20px;
     height: 95.9%;
     background: transparent;
 }
 
-.resizeHandle__01ae2 {
+.visual-refresh .resizeHandle__01ae2 {
     cursor: ew-resize;
     height: 100%;
     width: var(--chat-resize-handle-width);
