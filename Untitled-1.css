@@ -234,6 +234,10 @@
     background: none;
 }
 
+.channelTextArea_f75fb0 {
+    margin-bottom: 15px !important;
+}
+
 .mentioned__5126c:before {
     box-shadow: 4px 0px 6px 1px var(--button-background);
     background: var(--button-background);
