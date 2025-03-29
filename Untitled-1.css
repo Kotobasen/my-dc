@@ -17,7 +17,7 @@
     
     /*Background*/
     --background-image: var(--custom-image-url);
-    --app-blur: 0px;
+    --app-blur: 8px;
     --button-background: linear-gradient(60deg, var(--highlight), var(--highlight-darker));
     --button-background-static: var(--highlight);
     --background-primary: rgba(24, 24, 24, 0.26) !important;
@@ -25,6 +25,7 @@
     --background-tertiary: rgba(26, 26, 26, 0.815) !important;
     --background-modifier-hover: rgba(20, 20, 20, 0.500);
     --box-shadow: 0 0 10px 0px black;
+
 
     /*other*/
     --highlight: rgb(var(--rgb-highlight));
@@ -44,6 +45,9 @@
     --transition-time: 0.3s;
     --show-original-title: 0;
     --show-custom-title: 1;
+    --custom-title-text: "Lande della Discordia";
+    --custom-title-font-size: 16px;
+    --custom-title-font-weight: normal;
     --custom-title-margin-top: 0px;
     --custom-title-margin-left: 0px;
 
