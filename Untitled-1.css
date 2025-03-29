@@ -199,6 +199,11 @@
     background-color: transparent;
 }
 
+.channelTextArea_f75fb0 {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
 .footer__214dc {
     background-color: transparent !important;
 }
@@ -213,6 +218,20 @@
 .modeSelected__2ea32 .link__2ea32,
 .modeSelected__2ea32:hover .link__2ea32 {
     background: var(--background-message-highlight-hover);
+}
+
+.channelTextArea_f75fb0 {
+    background: black !important;
+    border: 1px solid #ddd !important; /* Светлая граница */
+    color: black !important; /* Чтобы текст был читаемым */
+}
+
+.visual-refresh .tabBody__133bf, 
+.sidebarScrollable__53543 .scroller__53543, 
+.visual-refresh .standardSidebarView__23e6b, 
+.visual-refresh .contentRegionScroller__23e6b {
+    background: rgba(0, 0, 0, 0) !important; 
+    backdrop-filter: blur(0px) brightness(0.9) !important;
 }
 
 .wrapper__2ea32:hover .link__2ea32 {
