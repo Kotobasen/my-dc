@@ -33,7 +33,7 @@
     --highlight-darker: hsl(from var(--highlight) calc(h + 15) s calc(l - 35));
     /*color-mix(in srgb,var(--highlight),#000 50%);*/
     --text: var(--text-muted);
-    --online-color: rgb(var(--rgb-online-color));
+    --online-color: rgb(var(#ffffff;))
     --afk-color: rgb(var(--rgb-afk-color));
     --dnd-color: rgb(var(--rgb-dnd-color));
     --streaming-color: rgb(var(--rgb-streaming-color));
