@@ -194,56 +194,29 @@
     background-repeat: no-repeat;
     background-position: center;
 }
-/* 1. Даты в сообщениях (основной чат) */
-.timestamp_cdbd93,
-.timestampInline__749d6,
-.timestampVisibleOnHover__50284 {
+
+[class*="timestamp"], 
+[class*="Timestamp"],
+[class*="time"],
+[class*="Time"],
+[class*="date"],
+[class*="Date"] {
     color: #FFFFFF !important;
+    opacity: 1 !important;
 }
 
-/* 2. Даты в профилях пользователей (блок "Участник с...") */
-.memberSince__6d7a7 {
-    color: #FFFFFF !important;
+.divider__908e2 .content__908e2 {
+    color: #f0f0f0 !important; /* Мягкий белый */
+    text-shadow: none !important;
 }
 
-/* 3. Даты в аудит-логе сервера */
-.auditLog__1a7a7 .timestamp_becb33 {
-    color: #FFFFFF !important;
-}
-
-/* 4. Даты в списке друзей (активность) */
-.activityTimestamp_b4e288 {
-    color: #FFFFFF !important;
-}
-
-/* 5. Даты в модальных окнах (например, создание сервера) */
-.timestamp__5c6e5 {
-    color: #FFFFFF !important;
-}
-
-/* 6. Даты в голосовых каналах */
-.timestamp__5c6e5 {
-    color: #FFFFFF !important;
-}
-
-/* 7. Даты в уведомлениях */
-.notificationTimestamp__8f6b2 {
-    color: #FFFFFF !important;
-}
-
-/* 8. Даты в поиске сообщений */
-.searchResult__9a7e6 .timestamp__5c6e5 {
-    color: #FFFFFF !important;
-}
-
-/* 9. Даты в ховере сообщений */
-.message__80c10:hover .timestamp_cdbd93 {
-    color: #FFFFFF !important;
-}
-
-/* 10. Даты в нитро-гифтах */
-.gifTimestamp__3a9e4 {
-    color: #FFFFFF !important;
+/* Для всех остальных дат (включая hover) */
+.timestamp_cdbd93, 
+.timestampInline__749d6, 
+.timestampVisibleOnHover__50284,
+[class*="timestamp"] {
+    color: #e6e6e6 !important; /* Еще более приглушенный */
+    opacity: 0.9 !important;
 }
 
 .link__972a0:hover,
