@@ -181,7 +181,6 @@
     color: var(--text-muted);
     font-size: 12px;
 }
-
 .visual-refresh .bg__960e4 {
     background: var(--background-image);
     background-size: cover;
@@ -1115,35 +1114,6 @@ button:has([d=" M7,-6 C7,-7.6570000648498535 5.6570000648498535,-9 4,-9 C4,-9 3.
 .lookFilled__201d5.colorGreen__201d5 {
     color: var(--white);         /* Цвет текста --online-color */
     background-color: #43b581;  /* Цвет фона */
-}
-
-#app-mount .wrapper__44b0c rect[fill="#593695"],
-#app-mount .wrapper__44b0c rect[mask*=streaming] {
-    fill: var(--streaming-color)
-}
-
-/* Для обычного состояния */
-#app-mount .wrapper__44b0c:not(:active):not(:hover) rect[fill="#43b581"],
-#app-mount .wrapper__44b0c:not(:active):not(:hover) rect[mask*=online] {
-    fill: var(--online-color) !important;
-}
-
-/* Для активного состояния */
-#app-mount .wrapper__44b0c:active rect[fill="#43b581"],
-#app-mount .wrapper__44b0c:active rect[mask*=online],
-#app-mount .wrapper__44b0c:hover rect[fill="#43b581"],
-#app-mount .wrapper__44b0c:hover rect[mask*=online] {
-    fill: var(--online-color) !important; /* Оставляем зеленым */
-}
-
-#app-mount .wrapper__44b0c rect[fill="#faa61a"],
-#app-mount .wrapper__44b0c rect[mask*=idle] {
-    fill: var(--afk-color)
-}
-
-#app-mount .wrapper__44b0c rect[fill="#f04747"],
-#app-mount .wrapper__44b0c rect[mask*=dnd] {
-    fill: var(--dnd-color)
 }
 
 .spine__5b40b {
