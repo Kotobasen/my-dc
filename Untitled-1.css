@@ -624,7 +624,7 @@ background: var(--darkPurple-background);
 
 .childWrapper__6e9f8 {
     /* discord logo color */
-    color: var(--highlight);
+    color: rgb(255, 255, 255);
 }
 
 .vc-ranb-button {
@@ -778,27 +778,24 @@ background: var(--darkPurple-background);
     /*forum posts cards hover */
     border: 1px solid var(--selected-channel-color);
 }
-
-.wordmark__421ed {
-    /* app title */
-    color: var(--selected-channel-color);
-    font-family: "Pirata One", system-ui;
-}
-
-.wordmark__421ed svg {
-    /* app title */
-    width: calc(55px*var(--show-original-title));
-    height: calc(16px*var(--show-original-title))
-}
-
 .wordmark__421ed::after {
     /* app title */
-    content: var(Ваших матерей Ебал);
+    content: var();
     font-size: calc(var(--custom-title-font-size)*var(--show-custom-title));
     font-weight: var(--custom-title-font-weight);
     margin-top: var(--custom-title-margin-top);
     margin-left: var(--custom-title-margin-left);
     display: block
+}
+.wordmark__421ed::after {
+    content: var(Venom Nahui); /* Важно: убрать кавычки внутри var() */
+    font-size: calc(var(16) * var(--show-custom-title));
+    font-weight: var(--custom-title-font-weight);
+    margin-top: var(--custom-title-margin-top);
+    margin-left: var(--custom-title-margin-left);
+    display: block;
+    font-family: "Pirata One", system-ui; /* Шрифт (у вас уже есть) */
+    color: var(#ffffff); /* Цвет из вашей темы */
 }
 
 .newMessagesBar__0f481 {
