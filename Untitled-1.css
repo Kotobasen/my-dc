@@ -1,3 +1,10 @@
+/*
+ *name          Lande della Discordia
+ *author        @ungiglio
+ *internalcode  AWKGLASS
+ *version       #20250327
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
 @import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css');   /* credits to mwittrien for the original code */
 @import url("https://ungiglio.github.io/DiscordDiscordia/awkglass_code/colored_userlist/userlist.css");
@@ -162,6 +169,193 @@
     --background-secondary-alt: var(--background-secondary) !important;
 
     --ver: "lande discordia ("var(--current-ver)") "var(--file-ver);
+}
+
+.info__2debe::before {
+    /* settings theme version */
+    content: var(--ver);
+    color: var(--text-muted);
+    font-size: 12px;
+}
+
+.visual-refresh .bg__960e4 {
+    background: var(--background-image);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.link__972a0:hover,
+.interactive__972a0:hover {
+    background: var(--button-background);
+    border-radius: 3px;
+    color: rgb(233, 233, 233);
+}
+
+#app-mount .guilds_c48ade [class*=pill] span[style*="height: 40"] {
+    background-color: var(--selected-channel-color);
+}
+
+.content_c48ade {
+    background-color: transparent;
+}
+
+.footer__214dc {
+    background-color: transparent !important;
+}
+
+.side_b3f026 .item_b3f026:hover,
+.containerDefault_c69b6d:hover .link__2ea32:hover {
+    border-radius: 3px;
+    background: var(--button-background);
+    color: white;
+}
+
+.modeSelected__2ea32 .link__2ea32,
+.modeSelected__2ea32:hover .link__2ea32 {
+    background: var(--background-message-highlight-hover);
+}
+
+.wrapper__2ea32:hover .link__2ea32 {
+    background: none;
+}
+
+.visual-refresh .sidebarList_c48ade {
+    border: 0;
+    margin-left: 10px;
+}
+
+.mentioned__5126c:before {
+    box-shadow: 4px 0px 6px 1px var(--button-background);
+    background: var(--button-background);
+}
+
+.winButton_c38106 {
+    background: #00000083;
+    color: #fff;
+    margin-top: 2px;
+    width: 30px;
+    height: 25px;
+}
+
+.winButtons_c38106 {
+    gap: 0;
+}
+
+.winButtonMinMax_c38106:hover {
+    background: var(--online-color);
+}
+
+.winButtonMinMax_c38106[aria-label*="Riduci"] {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.winButtonClose_c38106 {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-right: 20px;
+}
+
+.platform-win .sidebar_c48ade,
+.container__133bf,
+.chat_f75fb0 {
+    border-radius: 10px;
+    margin: 0 20px;
+}
+
+.visual-refresh .container__7641b {
+    background-color: var(--background-primary);
+}
+
+.visual-refresh .container__34c2c, .visual-refresh .header__34c2c {
+    background: var(--darkPurple-background);
+}
+
+.content_c48ade {
+    margin-bottom: 20px;
+}
+
+.visual-refresh .chat_f75fb0 {
+    background: none;
+}
+
+.guilds_c48ade {
+    border-radius: 10px;
+    margin: 6px;
+    margin-left: 0px;
+}
+
+.visual-refresh .title__85643 {
+    background: var(--background-primary);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.wordmarkWindows__421ed {
+    display: none;
+}
+
+.visual-refresh .childWrapperNoHoverBg__6e9f8 {
+    background: var(--background-primary);
+}
+.visual-refresh .childWrapperNoHoverBg__6e9f8>svg {
+    display: none;
+}
+
+#app-mount .sidebar_c48ade {
+    border-radius: 10px;
+}
+
+.visual-refresh .stackedBars__74017, .visual-refresh .sidebar_c48ade:after {
+    background: none;
+}
+
+.visual-refresh .wrapper_d5f3cd {
+    background-color: var(--darkPurple-background);
+}
+
+.visual-refresh .scroller__99e7c {
+    background: none;
+}
+
+.lookFilled__201d5.colorBrand__201d5,
+.lookFilled__201d5.colorPrimary__201d5,
+.botTagRegular__82f07,
+.unread__6fddf {
+    background: var(--button-background-static);
+}
+
+.modeUnreadImportant__2ea32 .name__2ea32,
+.modeUnreadImportant__2ea32:hover .name__2ea32 {
+    color: white;
+}
+
+.layers__160d8 {
+    margin: calc(var(--app-margin) / 2) var(--app-margin) var(--app-margin) var(--app-margin);
+    border-radius: var(--app-radius);
+    overflow: hidden;
+    z-index: 1;
+    backdrop-filter: blur(var(--app-blur));
+}
+
+.chatTarget__01ae2:before {
+    content: " ";
+    position: absolute;
+    width: calc(100% + var(--app-margin) * 2);
+    height: calc(100% + var(--app-margin) * 2 + 24px);
+    top: calc((var(--app-margin) + 24px) * -1);
+    left: calc(var(--app-margin) * -1);
+    background-color: var(--popout-color);
+    background-image: var(--app-bg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 0 100vmax var(--main-content-color);
+    filter: blur(var(--app-blur));
+    z-index: -1;
+    pointer-events: none;
 }
 
 #channelTabs-container {
@@ -420,6 +614,20 @@ span.button__67645.redGlow__67645 {
 
 .visual-refresh .bar__7aaec {   /* unread pill */
 background: var(--darkPurple-background);
+}
+
+.themedBackground__74017,
+.custom-profile-theme .inner_a99829 {
+    background: var(--bg-overlay-3, var(--darkPurple-background));
+    margin-top: 5px;
+}
+
+.container_c48ade {
+    --custom-chat-input-margin-bottom: 8px !important;
+}
+
+.channelTextArea_f75fb0 {
+    height: 60px;
 }
 
 .theme-dark .children__9293f:after,
