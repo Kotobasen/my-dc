@@ -170,6 +170,11 @@
     --ver: "lande discordia ("var(--current-ver)") "var(--file-ver);
 }
 
+.warning-block {
+  --afk-color: #c0c0c0; /* Серебристый серый */
+  --status-warning: var(--afk-color);
+}
+
 .info__2debe::before {
     /* settings theme version */
     content: var(--ver);
