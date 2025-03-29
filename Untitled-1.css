@@ -188,6 +188,10 @@
     color: var(--text-muted);
     font-size: 12px;
 }
+/* Оранжевые ники в чате */
+.clickable_c19a55.desaturateUserColors__41f68.username_c19a55 {
+    color: #FFA500 !important; /* Классический оранжевый */
+}
 .visual-refresh .bg__960e4 {
     background: var(--background-image);
     background-size: cover;
