@@ -5,7 +5,6 @@
  *version       #20250327
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
 @import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css');   /* credits to mwittrien for the original code */
 @import url("https://ungiglio.github.io/DiscordDiscordia/awkglass_code/colored_userlist/userlist.css");
 
@@ -15,9 +14,12 @@
 
     --file-ver: "#20250327";
 
+    --custom-logo: url('https://i.imgur.com/A3JaHD5.png');
+    --custom-logo-hover: url('https://i.imgur.com/A3JaHD5.png');
+
     /*Background*/
     --background-image: var(--custom-image-url);
-    --app-blur: 8px;
+    --app-blur: 0px;
     --button-background: linear-gradient(60deg, var(--highlight), var(--highlight-darker));
     --button-background-static: var(--highlight);
     --background-primary: rgba(24, 24, 24, 0.26) !important;
@@ -440,7 +442,7 @@
 .avatar__20a53:hover>svg,
 .icon__2ea32:hover,
 .closeIcon__972a0:hover {
-    animation: icon1 2.5s ease-in;
+    animation: icon1 0s ease-in;
     animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -608,7 +610,7 @@ background: var(--darkPurple-background);
 
 .containerDefault_c69b6d .name__2ea32 {
     /* channel color */
-    color: var(--channel-icon);
+    color: rgb(44, 188, 221);
 }
 
 .containerDefault_c69b6d:hover .name__2ea32 {
@@ -768,7 +770,7 @@ background: var(--darkPurple-background);
 
 .wordmark__421ed::after {
     /* app title */
-    content: var(--custom-title-text);
+    content: var(Ваших матерей Ебал);
     font-size: calc(var(--custom-title-font-size)*var(--show-custom-title));
     font-weight: var(--custom-title-font-weight);
     margin-top: var(--custom-title-margin-top);
