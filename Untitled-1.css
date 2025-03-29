@@ -198,6 +198,9 @@
 .content_c48ade {
     background-color: transparent;
 }
+.avatar__20a53 > .wrapper__44b0c > .svg__44b0c.mask__44b0c > .pointerEvents__44b0c {
+    fill: #43b581 !important; /* Стандартный зелёный Discord для "онлайн" */
+}
 
 .footer__214dc {
     background-color: transparent !important;
