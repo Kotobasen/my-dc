@@ -203,10 +203,6 @@
 .content_c48ade {
     background-color: transparent;
 }
-.avatar__20a53 > .wrapper__44b0c > .svg__44b0c.mask__44b0c > .pointerEvents__44b0c {
-    fill: #43b581 !important; /* Стандартный зелёный Discord для "онлайн" */
-}
-
 .footer__214dc {
     background-color: transparent !important;
 }
@@ -264,7 +260,7 @@
 }
 
 .winButtonMinMax_c38106:hover {
-    background: var(--online-color);
+    background: #43b581; /* Зелёный цвет как в Discord online-color*/
 }
 
 .winButtonMinMax_c38106[aria-label*="Riduci"] {
@@ -1118,13 +1114,10 @@ button:has([d=" M7,-6 C7,-7.6570000648498535 5.6570000648498535,-9 4,-9 C4,-9 3.
     box-shadow: var(--box-shadow);
 }
 
-.lookOutlined__201d5.colorGreen__201d5 {
-    color: var(--online-color);
-    border-color: var(--online-color);
-}
+ 
 .lookFilled__201d5.colorGreen__201d5 {
-    color: var(--white);
-    background-color: var(--online-color);
+    color: var(--white);         /* Цвет текста --online-color */
+    background-color: #43b581;  /* Цвет фона */
 }
 
 #app-mount .wrapper__44b0c rect[fill="#593695"],
