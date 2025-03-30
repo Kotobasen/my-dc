@@ -5,6 +5,7 @@
  *version       #20250327
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
 @import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css');   /* credits to mwittrien for the original code */
 @import url("https://ungiglio.github.io/DiscordDiscordia/awkglass_code/colored_userlist/userlist.css");
 
@@ -14,12 +15,9 @@
 
     --file-ver: "#20250327";
 
-    --custom-logo: url('https://i.imgur.com/A3JaHD5.png');
-    --custom-logo-hover: url('https://i.imgur.com/A3JaHD5.png');
-
     /*Background*/
     --background-image: var(--custom-image-url);
-    --app-blur: 0px;
+    --app-blur: 8px;
     --button-background: linear-gradient(60deg, var(--highlight), var(--highlight-darker));
     --button-background-static: var(--highlight);
     --background-primary: rgba(24, 24, 24, 0.26) !important;
@@ -28,13 +26,16 @@
     --background-modifier-hover: rgba(20, 20, 20, 0.500);
     --box-shadow: 0 0 10px 0px black;
 
+    --custom-logo: url('https://ungiglio.github.io/DiscordDiscordia/awkglass_code/assets/LandeDiscordia.png');
+    --custom-logo-hover: url('https://ungiglio.github.io/DiscordDiscordia/awkglass_code/assets/LandeDiscordiaHover.png');
+
     /*other*/
     --highlight: rgb(var(--rgb-highlight));
     --highlight-darker: hsl(from var(--highlight) calc(h + 15) s calc(l - 35));
     /*color-mix(in srgb,var(--highlight),#000 50%);*/
     --text: var(--text-muted);
-    --online-color: rgb(var(#00ff33;))
-    --afk-color: rgb(var(#24232b));
+    --online-color: rgb(var(--rgb-online-color));
+    --afk-color: rgb(var(--rgb-afk-color));
     --dnd-color: rgb(var(--rgb-dnd-color));
     --streaming-color: rgb(var(--rgb-streaming-color));
     --scrollbar-thin-thumb: var(--highlight);
@@ -170,215 +171,6 @@
     --ver: "lande discordia ("var(--current-ver)") "var(--file-ver);
 }
 
-.warning-block {
-  --afk-color: #c0c0c0; /* Серебристый серый */
-  --status-warning: var(--afk-color);
-}
-
-#app-mount .wrapper__44b0c rect[fill="#747f8d"], /* Стандартный цвет офлайн */
-#app-mount .wrapper__44b0c rect[mask*=invisible] {
-  fill: rgb(var(--discord-invisible)) !important;
-}
-#app-mount .wrapper__44b0c rect[fill="#747f8d"] {
-  fill: #555555 !important; /* Темно-серый */
-}
-
-.info__2debe::before {
-    /* settings theme version */
-    content: var(--ver);
-    color: var(--text-muted);
-    font-size: 12px;
-}
-
-.visual-refresh .bg__960e4 {
-    background: var(--background-image);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-[class*="timestamp"], 
-[class*="Timestamp"],
-[class*="time"],
-[class*="Time"],
-[class*="date"],
-[class*="Date"] {
-    color: #FFFFFF !important;
-    opacity: 1 !important;
-}
-
-.divider__908e2 .content__908e2 {
-    color: #f0f0f0 !important; /* Мягкий белый */
-    text-shadow: none !important;
-}
-
-/* Для всех остальных дат (включая hover) */
-.timestamp_cdbd93, 
-.timestampInline__749d6, 
-.timestampVisibleOnHover__50284,
-[class*="timestamp"] {
-    color: #e6e6e6 !important; /* Еще более приглушенный */
-    opacity: 0.9 !important;
-}
-
-.link__972a0:hover,
-.interactive__972a0:hover {
-    background: var(--button-background);
-    border-radius: 3px;
-    color: rgb(233, 233, 233);
-}
-
-#app-mount .guilds_c48ade [class*=pill] span[style*="height: 40"] {
-    background-color: var(--selected-channel-color);
-}
-
-.content_c48ade {
-    background-color: transparent;
-}
-.footer__214dc {
-    background-color: transparent !important;
-}
-
-.side_b3f026 .item_b3f026:hover,
-.containerDefault_c69b6d:hover .link__2ea32:hover {
-    border-radius: 3px;
-    background: var(--button-background);
-    color: white;
-}
-
-.modeSelected__2ea32 .link__2ea32,
-.modeSelected__2ea32:hover .link__2ea32 {
-    background: var(--background-message-highlight-hover);
-}
-
-.visual-refresh .tabBody__133bf, 
-.sidebarScrollable__53543 .scroller__53543, 
-.visual-refresh .standardSidebarView__23e6b, 
-.visual-refresh .contentRegionScroller__23e6b {
-    background: rgba(0, 0, 0, 0) !important; 
-    backdrop-filter: blur(0px) brightness(0.9) !important;
-}
-
-.wrapper__2ea32:hover .link__2ea32 {
-    background: none;
-}
-
-.mentioned__5126c:before {
-    box-shadow: 4px 0px 6px 1px var(--button-background);
-    background: var(--button-background);
-}
-
-.winButton_c38106 {
-    background: #00000083;
-    color: #fff;
-    margin-top: 0px;
-    width: 30px;
-    height: 25px;
-}
-
-.winButtons_c38106 {
-    gap: 0;
-}
-
-.winButtonMinMax_c38106:hover {
-    background: #43b581; /* Зелёный цвет как в Discord online-color*/
-}
-
-.winButtonMinMax_c38106[aria-label*="Riduci"] {
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-}
-
-.winButtonClose_c38106 {
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    margin-right: 0px;
-}
-
-.visual-refresh .container__7641b {
-    background-color: var(--background-primary);
-}
-
-.visual-refresh .container__34c2c, .visual-refresh .header__34c2c {
-    background: var(--darkPurple-background);
-}
-
-.visual-refresh .chat_f75fb0 {
-    background: none;
-}
-
-.visual-refresh .title__85643 {
-    background: var(--background-primary);
-    border-radius: 10px;
-    padding: 5px;
-}
-
-.wordmarkWindows__421ed {
-    display: none;
-}
-
-.visual-refresh .childWrapperNoHoverBg__6e9f8 {
-    background: var(--background-primary);
-}
-.visual-refresh .childWrapperNoHoverBg__6e9f8>svg {
-    display: none;
-}
-
-#app-mount .sidebar_c48ade {
-    border-radius: 10px;
-}
-
-.visual-refresh .stackedBars__74017, .visual-refresh .sidebar_c48ade:after {
-    background: none;
-}
-
-.visual-refresh .wrapper_d5f3cd {
-    background-color: var(--darkPurple-background);
-}
-
-.visual-refresh .scroller__99e7c {
-    background: none;
-}
-
-.lookFilled__201d5.colorBrand__201d5,
-.lookFilled__201d5.colorPrimary__201d5,
-.botTagRegular__82f07,
-.unread__6fddf {
-    background: var(--button-background-static);
-}
-
-.modeUnreadImportant__2ea32 .name__2ea32,
-.modeUnreadImportant__2ea32:hover .name__2ea32 {
-    color: white;
-}
-
-.layers__160d8 {
-    margin: calc(var(--app-margin) / 2) var(--app-margin) var(--app-margin) var(--app-margin);
-    border-radius: var(--app-radius);
-    overflow: hidden;
-    z-index: 1;
-    backdrop-filter: blur(var(--app-blur));
-}
-
-.chatTarget__01ae2:before {
-    content: " ";
-    position: absolute;
-    width: calc(100% + var(--app-margin) * 2);
-    height: calc(100% + var(--app-margin) * 2 + 24px);
-    top: calc((var(--app-margin) + 24px) * -1);
-    left: calc(var(--app-margin) * -1);
-    background-color: var(--popout-color);
-    background-image: var(--app-bg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    box-shadow: inset 0 0 0 100vmax var(--main-content-color);
-    filter: blur(var(--app-blur));
-    z-index: -1;
-    pointer-events: none;
-}
-
 #channelTabs-container {
     margin: calc(var(--app-margin) / 2) var(--app-margin) calc(var(--app-margin) / 4 * -1);
     padding: 4px !important;
@@ -448,6 +240,20 @@
     border: solid transparent;
 }
 
+.visual-refresh .theme-dark .container__37e49,
+.visual-refresh .theme-dark .panel__5dec7,
+.visual-refresh .container_fea832,
+.visual-refresh .searchBar__35e86,
+.visual-refresh .lookFilled__3f413.select__3f413,
+.visual-refresh .connectionHeader_c7f964,
+.visual-refresh .container_f369db,
+.visual-refresh .connectContainer_c7f964,
+.visual-refresh .container__133bf,
+.visual-refresh .theme-dark .scroller__99e7c,
+.visual-refresh .wrapper_cb9592.minimum_cb9592 {
+    background-color: var(--background-secondary);
+}
+
 .visual-refresh .sidebarRegionScroller__23e6b,
 .visual-refresh .contentRegionScroller__23e6b,
 .visual-refresh .searchBar__5ec2f,
@@ -486,6 +292,8 @@
 .avatar__20a53:hover>svg,
 .icon__2ea32:hover,
 .closeIcon__972a0:hover {
+    animation: icon1 2.5s ease-in;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 @keyframes icon1 {
@@ -606,11 +414,11 @@ span.button__67645.redGlow__67645 {
     background-color: var(--highlight);
     color: var(--background) !important
 }
-	.visual-refresh .channelTextArea__74017, .visual-refresh .channelTextArea__74017:focus-within {
+
+.visual-refresh .channelTextArea_f75fb0 {
     /* textbar area */
     border: 1px solid var(--highlight);
     background: var(--darkPurple-background);
-	margin-bottom: 25px;
 }
 
 .themedBackground__74017 {
@@ -621,20 +429,6 @@ span.button__67645.redGlow__67645 {
 background: var(--darkPurple-background);
 }
 
-.themedBackground__74017,
-.custom-profile-theme .inner_a99829 {
-    background: var(--bg-overlay-3, var(--darkPurple-background));
-    margin-top: 5px;
-}
-
-.container_c48ade {
-    --custom-chat-input-margin-bottom: 15px !important;
-}
-
-.channelTextArea_f75fb0 {
-    height: 60px;
-}
-
 .theme-dark .children__9293f:after,
 .form_f75fb0::before,
 .option__56fec:after {
@@ -643,7 +437,7 @@ background: var(--darkPurple-background);
 
 .childWrapper__6e9f8 {
     /* discord logo color */
-    color: rgb(255, 255, 255);
+    color: var(--highlight);
 }
 
 .vc-ranb-button {
@@ -652,7 +446,7 @@ background: var(--darkPurple-background);
 
 .containerDefault_c69b6d .name__2ea32 {
     /* channel color */
-    color: rgb(44, 188, 221);
+    color: var(--channel-icon);
 }
 
 .containerDefault_c69b6d:hover .name__2ea32 {
@@ -797,6 +591,19 @@ background: var(--darkPurple-background);
     /*forum posts cards hover */
     border: 1px solid var(--selected-channel-color);
 }
+
+.wordmark__421ed {
+    /* app title */
+    color: var(--selected-channel-color);
+    font-family: "Pirata One", system-ui;
+}
+
+.wordmark__421ed svg {
+    /* app title */
+    width: calc(55px*var(--show-original-title));
+    height: calc(16px*var(--show-original-title))
+}
+
 .wordmark__421ed::after {
     /* app title */
     content: var(--custom-title-text);
@@ -872,7 +679,7 @@ background: var(--darkPurple-background);
     font-weight: 500;
     display: flex;
     align-items: center;
-    padding: 0 8px 0;
+    padding: 0 8px 1px;
     flex-shrink: 0;
     position: relative;
     border-radius: 8px;
@@ -1105,7 +912,7 @@ button:has([d=" M7,-6 C7,-7.6570000648498535 5.6570000648498535,-9 4,-9 C4,-9 3.
     background: transparent;
 }
 
-.visual-refresh .resizeHandle__01ae2 {
+.resizeHandle__01ae2 {
     cursor: ew-resize;
     height: 100%;
     width: var(--chat-resize-handle-width);
@@ -1120,10 +927,33 @@ button:has([d=" M7,-6 C7,-7.6570000648498535 5.6570000648498535,-9 4,-9 C4,-9 3.
     box-shadow: var(--box-shadow);
 }
 
- 
+.lookOutlined__201d5.colorGreen__201d5 {
+    color: var(--online-color);
+    border-color: var(--online-color);
+}
 .lookFilled__201d5.colorGreen__201d5 {
-    color: var(--white);         /* Цвет текста --online-color */
-    background-color: #43b581;  /* Цвет фона */
+    color: var(--white);
+    background-color: var(--online-color);
+}
+
+#app-mount .wrapper__44b0c rect[fill="#593695"],
+#app-mount .wrapper__44b0c rect[mask*=streaming] {
+    fill: var(--streaming-color)
+}
+
+#app-mount .wrapper__44b0c rect[fill="#43b581"],
+#app-mount .wrapper__44b0c rect[mask*=online] {
+    fill: var(--online-color)
+}
+
+#app-mount .wrapper__44b0c rect[fill="#faa61a"],
+#app-mount .wrapper__44b0c rect[mask*=idle] {
+    fill: var(--afk-color)
+}
+
+#app-mount .wrapper__44b0c rect[fill="#f04747"],
+#app-mount .wrapper__44b0c rect[mask*=dnd] {
+    fill: var(--dnd-color)
 }
 
 .spine__5b40b {
@@ -1408,7 +1238,7 @@ button:has([d=" M7,-6 C7,-7.6570000648498535 5.6570000648498535,-9 4,-9 C4,-9 3.
 
 .pageBody__41ed7 {
     /* channels & roles tab */
-    margin-top: 0px;
+    margin-top: 10px;
     background: rgba(105, 15, 133, 0.8);
     border-radius: 10px;
     border: 1px solid var(--selected-channel-color);
@@ -1421,14 +1251,14 @@ button:has([d=" M7,-6 C7,-7.6570000648498535 5.6570000648498535,-9 4,-9 C4,-9 3.
     border: 1px solid var(--selected-channel-color);
 }
 
-.visual-refresh .header_c0e32c, .visual-refresh .inspector_aeaaeb,
-.visual-refresh .contentWrapper__08434, .visual-refresh .unicodeShortcut_b9ee0c, .visual-refresh .wrapper__4e6ce {
+.inspector_aeaaeb,
+.contentWrapper__08434 {
     /* emoji tab */
     background: var(--darkPurple-background);
 }
 
-.visual-refresh .header_c656ac,
-.visual-refresh .container_a45028 {
+.header_c656ac,
+.container_a45028 {
     /* emoji tab */
     background-color: rgba(35, 35, 35, 0.596);
 }
@@ -1518,71 +1348,4 @@ button:has([d=" M7,-6 C7,-7.6570000648498535 5.6570000648498535,-9 4,-9 C4,-9 3.
 
 .permissionCheckmark__50a54 {
     background: url(https://ungiglio.github.io/DiscordDiscordia/awkglass_code/assets/bluetick.svg) no-repeat;
-}
-/* Оранжевые ники в чате (Orange usernames in chat) */
-.username_d30d99.clickable_d30d99.desaturateUserColors_c19a55 {
-    color: #FFA500 !important; /* Classic orange color */
-}
-
-/* For newer Discord versions */
-.clickable_c19a55.desaturateUserColors__41f68.username_c19a55 {
-    color: #FFA500 !important;
-}
-/* Заменяем все упоминания purple на полупрозрачный черный */
---darkPurple-background: rgba(0, 0, 0, 0.7) !important; /* Было: --darkPurple-background */
-
-/* Везде где встречается purple в цветах */
-.lookFilled__201d5.colorBrand__201d5:hover {
-    background-color: rgba(0, 0, 0, 0.7); /* Было: rgb(178, 52, 255) */
-}
-
-.reaction__23977.reactionMe__23977 {
-    background-color: rgba(0, 0, 0, 0.3); /* Было: rgba(178, 102, 255, 0.3) */
-    border-color: var(--highlight);
-}
-
-.reaction_f8896c.reactionMe_f8896c {
-    background-color: rgba(0, 0, 0, 0.3); /* Было: rgba(178, 102, 255, 0.3) */
-    border-color: var(--highlight);
-}
-
-/* В модальных окнах */
-.large__49fc1, .medium__49fc1, .small__49fc1, .modal_b545d5, .form__468a6, 
-.oauth2ModalWrapper__647f0, .bd-modal-root, .root__49fc1 {
-    background: rgba(0, 0, 0, 0.8); /* Было: rgba(105, 15, 133, 0.8) */
-}
-
-/* В уведомлениях Vencord */
-.vc-notification-root {
-    background: rgba(0, 0, 0, 0.9); /* Было: rgba(105, 15, 133, 0.9) */
-}
-
-/* Вкладки каналов и ролей */
-.pageBody__41ed7 {
-    background: rgba(0, 0, 0, 0.8); /* Было: rgba(105, 15, 133, 0.8) */
-}
-
-/* В теме профиля */
-.custom-profile-theme .themeColor_fb7f94.primary_fb7f94 {
-    background: var(--button-background-static); /* Уже не содержит purple */
-}
-/* Белый цвет для выбранного канала */
-.containerDefault_c69b6d .modeSelected__2ea32 .name__2ea32 {
-    color: white !important;
-}
-
-/* Красный цвет для непрочитанных каналов */
-.containerDefault_c69b6d .modeUnreadImportant__2ea32 .name__2ea32 {
-    color: red !important;
-    font-weight: 550;
-}
-
-/* Зеленый цвет для голосовых каналов с участниками */
-.containerDefault_c69b6d[data-list-item-id^="channels___"]:has([aria-label*="пользователь"], [aria-label*="user"]) .name__2ea32:not(.modeSelected__2ea32 .name__2ea32):not(.modeUnreadImportant__2ea32 .name__2ea32) {
-    color: #43b581 !important;
-}
-
-/* Темно-зеленый при наведении */
-.containerDefault_c69b6d[data-list-item-id^="channels___"]:has([aria-label*="пользователь"], [aria-label*="user"]):hover .name__2ea32 {
-    color: #3ca374 !important;
 }
