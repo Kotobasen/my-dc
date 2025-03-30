@@ -1314,9 +1314,11 @@ button:has([d=" M7,-6 C7,-7.6570000648498535 5.6570000648498535,-9 4,-9 C4,-9 3.
     border-radius: 10px;
     background: var(--background-secondary);
 }
+
 .visual-refresh .clickable_f37cb1 {
     background: var(--background-primary);
 }
+
 .visual-refresh .header_f37cb1 {
     background: none;
 }
@@ -1349,9 +1351,11 @@ button:has([d=" M7,-6 C7,-7.6570000648498535 5.6570000648498535,-9 4,-9 C4,-9 3.
 .permissionCheckmark__50a54 {
     background: url(https://ungiglio.github.io/DiscordDiscordia/awkglass_code/assets/bluetick.svg) no-repeat;
 }
+
 .containerDefault_c69b6d .name__2ea32 {
     color: #6eb5ff !important;  /* Голубой */
-}.containerDefault_c69b6d .modeUnreadImportant__2ea32 .name__2ea32,
+}
+.containerDefault_c69b6d .modeUnreadImportant__2ea32 .name__2ea32,
 .containerDefault_c69b6d .modeUnread__2ea32 .name__2ea32 {
     color: #ff6b6b !important;
     font-weight: 600;
@@ -1402,7 +1406,6 @@ button:has([d=" M7,-6 C7,-7.6570000648498535 5.6570000648498535,-9 4,-9 C4,-9 3.
     fill: initial !important;
     stroke: initial !important;
 }
-
 /* 2. Принудительная установка цветов для всех состояний */
 /* Онлайн */
 rect[mask*="online"],
@@ -1443,11 +1446,13 @@ rect[fill="#faa61a"] {
         stroke: inherit !important;
     }
 }
+
 .rootWithShadow__49fc1.fullscreenOnMobile__49fc1.small__49fc1.root__49fc1.modal__67dba {
     background-color: rgba(30, 31, 34, 0.5) !important; /* 90% непрозрачности */
     backdrop-filter: none !important; /* Убираем размытие */
     box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1) !important; /* Тонкая граница */
 }
+
 .grow__201d5.sizeSmall__201d5.colorGreen__201d5.lookOutlined__201d5.button__201d5.inviteRowButton__67dba {
     color: #3ba55c !important; /* Зеленый текст */
     border-color: #3ba55c !important; /* Зеленая граница */
