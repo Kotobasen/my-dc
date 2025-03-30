@@ -17,7 +17,7 @@
 
     /*Background*/
     --background-image: var(--custom-image-url);
-    --app-blur: 8px;
+    --app-blur: 0px;
     --button-background: linear-gradient(60deg, var(--highlight), var(--highlight-darker));
     --button-background-static: var(--highlight);
     --background-primary: rgba(24, 24, 24, 0.26) !important;
@@ -1348,4 +1348,118 @@ button:has([d=" M7,-6 C7,-7.6570000648498535 5.6570000648498535,-9 4,-9 C4,-9 3.
 
 .permissionCheckmark__50a54 {
     background: url(https://ungiglio.github.io/DiscordDiscordia/awkglass_code/assets/bluetick.svg) no-repeat;
+}
+.containerDefault_c69b6d .name__2ea32 {
+    color: #6eb5ff !important;  /* Голубой */
+}.containerDefault_c69b6d .modeUnreadImportant__2ea32 .name__2ea32,
+.containerDefault_c69b6d .modeUnread__2ea32 .name__2ea32 {
+    color: #ff6b6b !important;
+    font-weight: 600;
+}
+.linkTop__2ea32 > .iconContainer__2ea32 > .icon__2ea32 {
+    color: white !important;
+}
+.divider__908e2 {
+    color: white !important;
+}
+.divider__908e2 .content__908e2 {
+    background-color: transparent !important;
+}
+.divider__908e2 .unreadPillCapStroke__908e2 {
+    color: white !important;
+    fill: white !important;
+}
+.wrapper__3af0b:hover .icon__3f5a7 {
+    color: #00b0ff !important;
+}
+.container__13cf1.name__29444.text-sm\/medium_cf4812.defaultColor__4bd52 > .overflow__82b15 {
+    color: white !important;
+}
+.icon__29444 {
+    color: white !important;
+    fill: white !important; /* На случай, если это SVG-иконка */
+}
+.fontSize16Padding__74017.slateTextArea_ec4baf.editor__1b31f.markup__75297 {
+    background-color: rgba(0, 0, 0, 0.1) !important; /* 70% непрозрачности */
+    border: 1px solid rgba(255, 255, 255, 0.6) !important; /* Полупрозрачная белая граница */
+    border-radius: 8px !important;
+    color: #ffffff !important;
+    padding: 12px !important;
+    backdrop-filter: none !important; /* Убираем размытие */
+}
+.fontSize16Padding__74017.slateTextArea_ec4baf.editor__1b31f.markup__75297:focus {
+    border-color: rgba(0, 176, 255, 0.7) !important; /* Полупрозрачная голубая граница */
+    box-shadow: 0 0 0 1px rgba(0, 176, 255, 0.3) !important;
+}
+.fontSize16Padding__74017.slateTextArea_ec4baf.editor__1b31f.markup__75297::placeholder {
+    color: rgba(255, 255, 255, 0.4) !important;
+}
+.fontSize16Padding__74017.slateTextArea_ec4baf.editor__1b31f.markup__75297 {
+    transition: all 0.2s ease !important;
+}
+[class*="activity"] rect,
+[class*="status"] rect {
+    fill: initial !important;
+    stroke: initial !important;
+}
+
+/* 2. Принудительная установка цветов для всех состояний */
+/* Онлайн */
+rect[mask*="online"],
+rect[fill="#43b581"] {
+    fill: #43b581 !important;
+    stroke: #43b581 !important;
+}
+
+/* Мобильный */
+rect[mask*="mobile"],
+rect[fill="#3dc260"] {
+    fill: #3dc260 !important;
+    stroke: #3dc260 !important;
+}
+
+/* Не беспокоить */
+rect[mask*="dnd"],
+rect[fill="#f04747"] {
+    fill: #f04747 !important;
+    stroke: #f04747 !important;
+}
+
+/* Отошел */
+rect[mask*="idle"],
+rect[fill="#faa61a"] {
+    fill: #faa61a !important;
+    stroke: #faa61a !important;
+}
+
+/* 3. Фикс для всплывающих карточек пользователей */
+[class*="profilePanel"] rect {
+    animation: statusReset 0.1s forwards !important;
+}
+
+@keyframes statusReset {
+    to {
+        fill: inherit !important;
+        stroke: inherit !important;
+    }
+}
+.rootWithShadow__49fc1.fullscreenOnMobile__49fc1.small__49fc1.root__49fc1.modal__67dba {
+    background-color: rgba(30, 31, 34, 0.5) !important; /* 90% непрозрачности */
+    backdrop-filter: none !important; /* Убираем размытие */
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1) !important; /* Тонкая граница */
+}
+.grow__201d5.sizeSmall__201d5.colorGreen__201d5.lookOutlined__201d5.button__201d5.inviteRowButton__67dba {
+    color: #3ba55c !important; /* Зеленый текст */
+    border-color: #3ba55c !important; /* Зеленая граница */
+    background-color: transparent !important; /* Прозрачный фон */
+}
+
+/* Состояние при наведении */
+.grow__201d5.sizeSmall__201d5.colorGreen__201d5.lookOutlined__201d5.button__201d5.inviteRowButton__67dba:hover {
+    background-color: rgba(59, 165, 92, 0.1) !important; /* Слегка зеленый фон */
+}
+
+/* Состояние при нажатии */
+.grow__201d5.sizeSmall__201d5.colorGreen__201d5.lookOutlined__201d5.button__201d5.inviteRowButton__67dba:active {
+    background-color: rgba(59, 165, 92, 0.2) !important; /* Более насыщенный зеленый */
 }
